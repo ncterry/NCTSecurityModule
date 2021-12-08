@@ -39,7 +39,7 @@
 # -------------------------------
 
 # PSScriptRoot is the in-the-moment path to where this file is being executed from.
-$functionPath = $PSScriptRoot + "\Functions\"
+$functionPath = $PSScriptRoot + "\NCTFunctions\"
 
 # Gather a list of all of the function names created in the NCTSecurityModule sub-folder.
 $functionList = Get-ChildItem -Path $functionPath -Name
