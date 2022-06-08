@@ -21,7 +21,7 @@ Function Set-MainMenu {
     Write-Host -ForegroundColor Yellow (" 3) Registry Info `t`t`t`t`tEnter: 3")
     Write-Host -ForegroundColor Yellow (" 4) Windows 10 STIG `t`t`t`t`tEnter: 4")
     Write-Host -ForegroundColor Yellow (" -----")
-    Write-Host -ForegroundColor Yellow (" HELP   - Enter the Number + h (EX: 1h, 2h) `t`tEnter: #h")
+    Write-Host -ForegroundColor Yellow (" HELP   - Enter the Number + h (EX: 1h, 2h) `t`tEnter: '#'h")
     Write-Host -ForegroundColor Yellow (" README - Program Summary `t`t`t`tEnter: `'readme`'")
     Write-Host -ForegroundColor Red (" Quit the Program `t`t`t`t`tEnter: `'quit`'")
 }#End Function Set-MainMenu ===============================================
@@ -46,6 +46,9 @@ do {
     # ----------------------
 
         '1' {
+            # Assuming execution of RunNCTSecurityProgram is within the \NCTSecurityProgram
+            .\Menu\1_SystemInfoMenu.ps1
+            If($Global:quit -eq "quit") {break}
 
         }#End 1
         # ----------------------
@@ -56,6 +59,9 @@ do {
         # ----------------------
 
         '2' {
+            # Assuming execution of RunNCTSecurityProgram is within the \NCTSecurityProgram
+            .\Menu\2_DomainInfoMenu.ps1
+            If($Global:quit -eq "quit") {break}
 
         }#End 2
         # ----------------------
@@ -66,6 +72,9 @@ do {
         # ----------------------
 
         '3' {
+            # Assuming execution of RunNCTSecurityProgram is within the \NCTSecurityProgram
+            .\Menu\3_RegistryInfoMenu.ps1
+            If($Global:quit -eq "quit") {break}
 
         }#End 3
         # ----------------------
