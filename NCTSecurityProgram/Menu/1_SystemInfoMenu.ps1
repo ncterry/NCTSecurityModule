@@ -15,6 +15,7 @@ Function Set-Header {
 
 Function Set-MainMenu { 
     Write-Host ("`n Selections:`n ----------- ")
+<<<<<<< HEAD
     Write-Host -ForegroundColor Yellow (" 1) Operating System Version Info `t`t`tEnter: 1")
     Write-Host -ForegroundColor Yellow (" 2) System BIOS Info `t`t`t`t`tEnter: 2")
     Write-Host -ForegroundColor Yellow (" 3) Machine Manufacturer and Model `t`t`tEnter: 3")
@@ -25,6 +26,13 @@ Function Set-MainMenu {
     Write-Host -ForegroundColor Yellow (" RETURN - To prior menu `t`t`t`tEnter: 0")
     Write-Host -ForegroundColor Yellow (" HELP   - Enter the Number + h (EX: 1h, 2h) `t`tEnter: #h")
     Write-Host -ForegroundColor Yellow (" README - Program Summary `t`t`t`tEnter: `'readme`'")
+=======
+    Write-Host -ForegroundColor Yellow (" 1) System Info `t`t`t`t`tEnter: 1")
+
+    Write-Host -ForegroundColor Yellow (" -----")
+    Write-Host -ForegroundColor Yellow (" HELP   - Enter the Number + h (EX: 1h, 2h) `tEnter: #h")
+    Write-Host -ForegroundColor Yellow (" README - Program Summary `t`t`tEnter: `'readme`'")
+>>>>>>> 5efabc989bfe23891484c55662b5dbecf1725f0a
     Write-Host -ForegroundColor Red (" Quit the Program `t`t`t`t`tEnter: `'quit`'")
 }#End Function Set-MainMenu==================================================
 
@@ -40,7 +48,11 @@ do {
     Clear-Host
     Set-Header
     Set-MainMenu
+<<<<<<< HEAD
     $choice = Read-Host ("`n`n Enter Choice") #This will pause and wait for user input.
+=======
+    $choice = Read-Host ("`n`n Enter Choice: ") #This will pause and wait for user input.
+>>>>>>> 5efabc989bfe23891484c55662b5dbecf1725f0a
     $choice = $choice -replace '\s', ""    #Remove any spaces from user input.
     $choice = $choice.ToLower()            #These choices for menu will only user numbers, and lowercase
 
@@ -48,10 +60,13 @@ do {
     # ----------------------
 
         '1' {
+<<<<<<< HEAD
             # Operating system information
             Write-Host -ForegroundColor Yellow (" -----")
             Get-ComputerInfo -Property "os*"
             Pause
+=======
+>>>>>>> 5efabc989bfe23891484c55662b5dbecf1725f0a
 
         }#End 1
         # ----------------------
@@ -62,10 +77,13 @@ do {
         # ----------------------
 
         '2' {
+<<<<<<< HEAD
             # System BIOS Information
             Write-Host -ForegroundColor Yellow (" -----")
             Get-CimInstance -ClassName Win32_BIOS
             Pause
+=======
+>>>>>>> 5efabc989bfe23891484c55662b5dbecf1725f0a
 
         }#End 2
         # ----------------------
@@ -76,10 +94,13 @@ do {
         # ----------------------
 
         '3' {
+<<<<<<< HEAD
             # Machine Manufacturer and Model
             Write-Host -ForegroundColor Yellow (" -----")
             Get-CimInstance -ClassName Win32_ComputerSystem
             Pause
+=======
+>>>>>>> 5efabc989bfe23891484c55662b5dbecf1725f0a
 
         }#End 3
         # ----------------------
@@ -89,6 +110,7 @@ do {
         }#End 3h
         # ----------------------
 
+<<<<<<< HEAD
         '4' {
             # Listing of local users and owner
             Write-Host -ForegroundColor Yellow (" -----")
@@ -115,6 +137,8 @@ do {
 
         }#End 5h
         # ----------------------
+=======
+>>>>>>> 5efabc989bfe23891484c55662b5dbecf1725f0a
         'quit' {
         # Account for all types of quitting
             $Global:quit = 'quit'
