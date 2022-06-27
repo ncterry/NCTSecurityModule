@@ -1,5 +1,7 @@
 # Function Template
-# Remember that if you create a new function here, or edit an existing function, you need to import the NCTSecurityModule again, to import that new/updated function into the PowerShell cache.
+# Remember that if you create a new function here, 
+#   or edit an existing function, you need to import the NCTSecurityModule again, 
+#   to import that new/updated function into the PowerShell cache.
 
 Function Get-FunctionName {
     <#

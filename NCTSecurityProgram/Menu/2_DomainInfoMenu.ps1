@@ -1,25 +1,27 @@
-# 4_WindowsSTIGMenu.ps1
+# Run the full functioning Menu
+# .\menuTemplate.ps1
+
+# This is just a default menu template
 
 
-# This is Windows 10 STIG Menu
 Function Set-Header {
     Write-Host("
 |==========================================================================|
-|======================--- Windows 10 STIG Menu ---========================|
+|=======================--- Domain Info Menu---============================|
 |==========================================================================|")
-}#End Function Set-Header ==================================================
+}#End Function Set-Header===================================================
+
 
 
 Function Set-MainMenu { 
     Write-Host ("`n Selections:`n ----------- ")
-    Write-Host -ForegroundColor Yellow (" 1) Windows10 STIG Checks/Findings `t`t`tEnter: 1")
+    Write-Host -ForegroundColor Yellow (" 1) Domain Info `t`t`t`t`tEnter: 1")
 
     Write-Host -ForegroundColor Yellow (" -----")
     Write-Host -ForegroundColor Yellow (" RETURN - To prior menu `t`t`t`tEnter: 0")
     Write-Host -ForegroundColor Yellow (" HELP   - Enter the Number + h (EX: 1h, 2h) `t`tEnter: #h")
     Write-Host -ForegroundColor Yellow (" README - Program Summary `t`t`t`tEnter: `'readme`'")
     Write-Host -ForegroundColor Red (" Quit the Program `t`t`t`t`tEnter: `'quit`'")
-
 }#End Function Set-MainMenu==================================================
 
 
@@ -83,4 +85,3 @@ do {
 
 # Nothing asks for 0. Infinite loop until user chooses 'quit'
 } until (($choice -eq 0)) #End do
-
