@@ -9,6 +9,10 @@ All functions associated with NCTSecurityModule were built to be run primarily f
 > .\RunNCTSecurityProgram.ps1
 Within the 'NCTSecurityModule' directory, the NCTSecurityProgram has an associated 'Shortcut' This can be run/pinned to anywhere on the machine; however, regardless of where it is run from, the default location that the NCTSecurityProgram will always used for data, reports, functions etc. is the WindowsPowershell location that the progrma copies itself to during execution:
 
+We created an temporary alias for this program. To make an alias permanent you need to add these commands to your profile as well:
+> notepad.exe $PROFILE
+> New-Alias nct "C:\Program Files\WindowsPowerShell\Modules\NCTSecurityModule\NCTSecurityProgram\RunNCTSecurityProgram.ps1"
+
 'C:\Program Files\WindowsPowerShell\Modules\NCTSecurityModule'
 This module setup can be done automatically as an Administrator in PowerShell 1) Move to where the NCTSecurityModule directory has been downloaded to. 2) Install the Module:
 
@@ -17,9 +21,18 @@ You can also right-click on the InstallNCTSecurityModule.ps1 script, and select 
 
 This will copy over all of the NCTSecurityModule from the downloaded directory to the: 'C:\Program Files\WindowsPowerShell\Modules\NCTSecurityModule' If the system does not then delete the downloaded NCTSecurityModule directory, that should be done automatically. Once installed, the NCTSecurityModule should only be run from the: 'C:\Program Files\WindowsPowerShell\Modules\NCTSecurityModule' directory As all actions, and results will now be called from, and saved to this directory.
 
-Once installed, the program can be executed in 2 different ways. 1) Double-Click on: 'C:\Program Files\WindowsPowerShell\Modules\NCTSecurityModule\NCTSecurityProgram\RunNCTSecurityProgram - Shortcut' This shortcut can also be pinned anywhere on the machine.
+We created an temporary alias for the installation. To make an alias permanent you need to add these commands to your profile as well. If you make changes to the code in the working repo, it needs to be 'installed' again, to update the module code that the system uses. So we install 
+from the working 'git' directory, and then run the program from the WindowsPowerShell Module.
+> notepad.exe $PROFILE
+> New-Alias inct "C:\Users\User\Documents\Github\NCTSecurityModule\InstallNCTSecurityModule.ps1"
 
-2) Or from PowerShell, as an Administrator, execute the RunNCTSecurityProgram script: > .\RunNCTSecurityProgram.ps1
+Once installed, the program can be executed in 3 different ways. 1) Double-Click on: 'C:\Program Files\WindowsPowerShell\Modules\NCTSecurityModule\NCTSecurityProgram\RunNCTSecurityProgram - Shortcut' This shortcut can also be pinned anywhere on the machine.
+
+2) Or from PowerShell, as an Administrator, execute the RunNCTSecurityProgram script: 
+> .\RunNCTSecurityProgram.ps1
+
+3) Since we included an new alias, then from a PowerShell Terminal:
+> nct
 
 This will automatically, re-import menu's and functions associated with NCTSecurityModule in case any code changes were made. Then it will run the NCTSecurityProgram as intended.
 
