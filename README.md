@@ -1,4 +1,4 @@
-README - NCTSecurity Module
+README - NCTSecurity Module 
 This is built around a PowerShell Module implementation, with external uses of C#, Python, etc. The NCTSecurityProgram focuses on Windows 10/11 Security. This is an all-encompassing security module for as many aspects of Windows 10/11 checks, findings, and fixes.
 
 The NCTSecurityModule was built to accomplish everything, and run through the NCTSecurityProgram. That functions as a menu that can be used to call every security measure; however, nearly every associated function created for this Module can also be run independantly. These functions all have assciated help information that can be viewed with:
