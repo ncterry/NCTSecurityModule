@@ -18,9 +18,14 @@ Function Set-MainMenu {
     Write-Host -ForegroundColor Yellow (" 1) Registry Info `t`t`t`t`tEnter: 1")
 
     Write-Host -ForegroundColor Yellow (" -----")
+<<<<<<< HEAD
     Write-Host -ForegroundColor Yellow (" RETURN - To prior menu `t`t`t`tEnter: 0")
     Write-Host -ForegroundColor Yellow (" HELP   - Enter the Number + h (EX: 1h, 2h) `t`tEnter: #h")
     Write-Host -ForegroundColor Yellow (" README - Program Summary `t`t`t`tEnter: `'readme`'")
+=======
+    Write-Host -ForegroundColor Yellow (" HELP   - Enter the Number + h (EX: 1h, 2h) `tEnter: #h")
+    Write-Host -ForegroundColor Yellow (" README - Program Summary `t`t`tEnter: `'readme`'")
+>>>>>>> 5efabc989bfe23891484c55662b5dbecf1725f0a
     Write-Host -ForegroundColor Red (" Quit the Program `t`t`t`t`tEnter: `'quit`'")
 }#End Function Set-MainMenu==================================================
 

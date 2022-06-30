@@ -15,9 +15,9 @@ Function Set-Header {
 
 Function Set-MainMenu { 
     Write-Host ("`n Selections:`n ----------- ")
-    Write-Host -ForegroundColor Yellow (" 1) System Info `t`t`t`t`tEnter: 1")
-    Write-Host -ForegroundColor Yellow (" 2) Domain Info `t`t`t`t`tEnter: 2")
-    Write-Host -ForegroundColor Yellow (" 3) Registry Info `t`t`t`t`tEnter: 3")
+    Write-Host -ForegroundColor Yellow (" 1)  Info `t`t`t`t`tEnter: 1")
+    Write-Host -ForegroundColor Yellow (" 2)  Info `t`t`t`t`tEnter: 2")
+    Write-Host -ForegroundColor Yellow (" 3)  Info `t`t`t`t`tEnter: 3")
     Write-Host -ForegroundColor Yellow (" -----")
     Write-Host -ForegroundColor Yellow (" HELP   - Enter the Number + h (EX: 1h, 2h) `tEnter: #h")
     Write-Host -ForegroundColor Yellow (" README - Program Summary `t`t`tEnter: `'readme`'")
