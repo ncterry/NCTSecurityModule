@@ -20,6 +20,7 @@ Function Set-MainMenu {
     Write-Host -ForegroundColor Yellow (" 2) Domain Info `t`t`t`t`tEnter: 2")
     Write-Host -ForegroundColor Yellow (" 3) Registry Info `t`t`t`t`tEnter: 3")
     Write-Host -ForegroundColor Yellow (" 4) Windows 10 STIG `t`t`t`t`tEnter: 4")
+    
     Write-Host -ForegroundColor Yellow (" -----")
     Write-Host -ForegroundColor Yellow (" HELP   - Enter the Number + h (EX: 1h, 2h) `t`tEnter: '#'h")
     Write-Host -ForegroundColor Yellow (" README - Program Summary `t`t`t`tEnter: `'readme`'")
@@ -41,13 +42,17 @@ do {
     $choice = Read-Host ("`n`n Enter Choice") #This will pause and wait for user input.
     $choice = $choice -replace '\s', ""    #Remove any spaces from user input.
     $choice = $choice.ToLower()            #These choices for menu will only user numbers, and lowercase
-
+    
+    # Create string to hold address to installed module menu
+    # Changes are made to working directory. Then Make sure it is running the module directory
+    $menuAddress = "C:\Program` Files\WindowsPowerShell\Modules\NCTSecurityModule\NCTSecurityProgram\Menu"
+    
     Switch($choice) {
     # ----------------------
-
         '1' {
             # Assuming execution of RunNCTSecurityProgram is within the \NCTSecurityProgram
-            .\Menu\1_SystemInfoMenu.ps1
+            & "$menuAddress\1_SystemInfoMenu.ps1"
+
             If($Global:quit -eq "quit") {break}
 
         }#End 1
@@ -60,7 +65,7 @@ do {
 
         '2' {
             # Assuming execution of RunNCTSecurityProgram is within the \NCTSecurityProgram
-            .\Menu\2_DomainInfoMenu.ps1
+            & "$menuAddress\2_DomainInfoMenu.ps1"
             If($Global:quit -eq "quit") {break}
 
         }#End 2
@@ -73,7 +78,7 @@ do {
 
         '3' {
             # Assuming execution of RunNCTSecurityProgram is within the \NCTSecurityProgram
-            .\Menu\3_RegistryInfoMenu.ps1
+            & "$menuAddress\3_RegistryInfoMenu.ps1"
             If($Global:quit -eq "quit") {break}
 
         }#End 3
@@ -87,7 +92,7 @@ do {
         '4' {
             Write-Host("4) You Chose Windows 10 STIG")
             # Assuming execution of RunNCTSecurityProgram is within the \NCTSecurityProgram
-            .\Menu\4_Windows10STIGMenu.ps1
+            & "$menuAddress\4_Windows10STIGMenu.ps1"
             If($Global:quit -eq "quit") {break}
 
         }#End 3

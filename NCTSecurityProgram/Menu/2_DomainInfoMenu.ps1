@@ -15,7 +15,7 @@ Function Set-Header {
 
 Function Set-MainMenu { 
     Write-Host ("`n Selections:`n ----------- ")
-    Write-Host -ForegroundColor Yellow (" 1) Domain Info `t`t`t`t`tEnter: 1")
+    Write-Host -ForegroundColor Yellow (" 1) Domain Controller Info `t`t`t`t`tEnter: 1")
 
     Write-Host -ForegroundColor Yellow (" -----")
     Write-Host -ForegroundColor Yellow (" RETURN - To prior menu `t`t`t`tEnter: 0")
@@ -44,16 +44,53 @@ do {
     # ----------------------
 
         '1' {
-
+            # Get an available domain controller in the current domain
+            Get-ADDomain
+            Pause
         }#End 1
         # ----------------------
 
         '1h' {
+            # Example of what is shown
+            <#
+            AllowedDNSSuffixes                 : {}
+            ChildDomains                       : {}
+            ComputersContainer                 : CN=Computers,DC=NCT,DC=local
+            DeletedObjectsContainer            : CN=Deleted Objects,DC=NCT,DC=local
+            DistinguishedName                  : DC=NCT,DC=local
+            DNSRoot                            : NCT.local
+            DomainControllersContainer         : OU=Domain Controllers,DC=NCT,DC=local
+            DomainMode                         : Windows2016Domain
+            DomainSID                          : S-1-5-21-2223769531-4211276685-4166951426
+            ForeignSecurityPrincipalsContainer : CN=ForeignSecurityPrincipals,DC=NCT,DC=local
+            Forest                             : NCT.local
+            InfrastructureMaster               : DC01.NCT.local
+            LastLogonReplicationInterval       :
+            LinkedGroupPolicyObjects           : {CN={31B2F340-016D-11D2-945F-00C04FB984F9},CN=Policies,CN=System,DC=NCT,DC=local}
+            LostAndFoundContainer              : CN=LostAndFound,DC=NCT,DC=local
+            ManagedBy                          :
+            Name                               : NCT
+            NetBIOSName                        : NCT
+            ObjectClass                        : domainDNS
+            ObjectGUID                         : f71f2632-5e70-4eb1-ae8b-9e7ca216b03c
+            ParentDomain                       :
+            PDCEmulator                        : DC01.NCT.local
+            PublicKeyRequiredPasswordRolling   : True
+            QuotasContainer                    : CN=NTDS Quotas,DC=NCT,DC=local
+            ReadOnlyReplicaDirectoryServers    : {}
+            ReplicaDirectoryServers            : {DC01.NCT.local}
+            RIDMaster                          : DC01.NCT.local
+            SubordinateReferences              : {DC=ForestDnsZones,DC=NCT,DC=local, DC=DomainDnsZones,DC=NCT,DC=local,
+                                                CN=Configuration,DC=NCT,DC=local}
+            SystemsContainer                   : CN=System,DC=NCT,DC=local
+            UsersContainer                     : CN=Users,DC=NCT,DC=local
+            #>
 
         }#End 1h
         # ----------------------
 
         '2' {
+            Get-ADDomainCon
 
         }#End 2
         # ----------------------

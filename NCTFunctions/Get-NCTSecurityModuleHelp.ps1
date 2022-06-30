@@ -4,6 +4,7 @@
 # Main Menu Section 3, Task 4
 # Full details on what happens in that section.
 # > Get-NCTSecurityModuleHelp 3.4
+# > Get-NCTSecurityModuleHelp -sectopm 3.4
 
 Function Get-NCTSecurityModuleHelp {
     Param(
@@ -15,19 +16,20 @@ Function Get-NCTSecurityModuleHelp {
     
         If ($section -eq '1.1') {
             Write-Host("Help section for menu section 1.1")
+            Pause
     
         }#End Section 1.1
         #----------------
     
         If ($section -eq '1.2') {
-            Write-Host("Help section for menu section 1.1")
-    
+            Write-Host("Help section for menu section 1.2")
+            Pause
         }#End Section 1.2
         #----------------
     
         If ($section -eq '1.3') {
-            Write-Host("Help section for menu section 1.1")
-    
+            Write-Host("Help section for menu section 1.3")
+            Pause
         }#End Section 1.3
         #----------------
         

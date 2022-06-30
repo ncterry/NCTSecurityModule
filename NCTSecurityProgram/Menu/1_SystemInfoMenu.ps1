@@ -20,6 +20,10 @@ Function Set-MainMenu {
     Write-Host -ForegroundColor Yellow (" 3) Machine Manufacturer and Model `t`t`tEnter: 3")
     Write-Host -ForegroundColor Yellow (" 4) Listing Local Users and Owner `t`t`tEnter: 4")
     Write-Host -ForegroundColor Yellow (" 5) Get Available Disk Space`t`t`t`tEnter: 5")
+    Write-Host -ForegroundColor Yellow (" 6) Computer Name `t`t`t`t`tEnter: 6")
+    Write-Host -ForegroundColor Yellow (" 7) PowerShell Version `t`t`t`t`tEnter: 7")
+    Write-Host -ForegroundColor Yellow (" 8) View List of Function Aliases `t`t`tEnter: 8")
+    Write-Host -ForegroundColor Yellow (" 9) Test Python Script `t`t`t`tEnter: 9")
 
     Write-Host -ForegroundColor Yellow (" -----")
     Write-Host -ForegroundColor Yellow (" RETURN - To prior menu `t`t`t`tEnter: 0")
@@ -55,12 +59,10 @@ do {
 
         }#End 1
         # ----------------------
-
         '1h' {
-
+            Get-NCTSecurityModuleHelp -section 1.1
         }#End 1h
         # ----------------------
-
         '2' {
             # System BIOS Information
             Write-Host -ForegroundColor Yellow (" -----")
@@ -69,12 +71,10 @@ do {
 
         }#End 2
         # ----------------------
-
         '2h' {
-
+            Get-NCTSecurityModuleHelp -section 1.2
         }#End 2h
         # ----------------------
-
         '3' {
             # Machine Manufacturer and Model
             Write-Host -ForegroundColor Yellow (" -----")
@@ -83,12 +83,10 @@ do {
 
         }#End 3
         # ----------------------
-
         '3h' {
-
+            Get-NCTSecurityModuleHelp -section 1.3
         }#End 3h
-        # ----------------------
-
+        # ---------------------
         '4' {
             # Listing of local users and owner
             Write-Host -ForegroundColor Yellow (" -----")
@@ -97,12 +95,10 @@ do {
 
         }#End 4
         # ----------------------
-
         '4h' {
-
+            Get-NCTSecurityModuleHelp -section 1.4
         }#End 4h
         # ----------------------
-
         '5' {
             # Get Available Disk Space
             Write-Host -ForegroundColor Yellow (" -----")
@@ -110,11 +106,67 @@ do {
             Pause
         }#End 5
         # ----------------------
-
         '5h' {
-
+            Get-NCTSecurityModuleHelp -section 1.5
         }#End 5h
         # ----------------------
+        '6' {
+            # Gather the name of the machine
+            Write-Host -ForegroundColor Yellow (" -----")
+            (Get-WmiObject win32_operatingsystem).CSName
+            Pause
+        }#End 6
+        # ----------------------
+        '6h' {
+            Get-NCTSecurityModuleHelp -section 1.6
+        }#End 6h
+        # ----------------------
+        '7' {
+            # View the current version of PowerShell 
+            Write-Host -ForegroundColor Yellow (" -----")
+            $PSVersionTable
+            Pause
+        }#End 7
+        # ----------------------
+        '7h' {
+            Get-NCTSecurityModuleHelp -section 1.7
+        }#End 7h
+        # ----------------------
+        '8' {
+            # View a list of function aliases
+            Write-Host -ForegroundColor Yellow (" -----")
+            Get-Alias *
+            Pause
+        }#End 8
+        # ----------------------
+        '8h' {
+            Get-NCTSecurityModuleHelp -section 1.8
+        }#End 8h
+        # ----------------------
+        '9' {
+            # Call a python script through PowerShell
+            Write-Host -ForegroundColor Yellow (" -----")
+            python sum.py 3 4
+            Pause
+        }#End 9
+        # ----------------------
+        '8h' {
+            Get-NCTSecurityModuleHelp -section 1.8
+        }#End 8h
+        # ----------------------
+        <#**********************
+        '1' {
+            # 
+            Write-Host -ForegroundColor Yellow (" -----")
+
+            Pause
+        }#End 1
+        # ----------------------
+        '1h' {
+            Get-NCTSecurityModuleHelp -section 1.1
+        }#End 1h
+        # ----------------------
+        ************************#>
         'quit' {
         # Account for all types of quitting
             $Global:quit = 'quit'
