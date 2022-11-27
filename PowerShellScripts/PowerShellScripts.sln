@@ -20,6 +20,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		ServerStatus.ps1 = ServerStatus.ps1
 		TranscriptInstructions.ps1 = TranscriptInstructions.ps1
 		VBAOpenEmailTry1.ps1 = VBAOpenEmailTry1.ps1
+		domainInfo.ps1 = domainInfo.ps1
+		getAllUsersFromAD.ps1 = getAllUsersFromAD.ps1
+		getAllADusers.ps1 = getAllADusers.ps1
+		disableUserAccount.ps1 = disableUserAccount.ps1
+		createNewOU.ps1 = createNewOU.ps1
+		createComputerObjects.ps1 = createComputerObjects.ps1
+		SearchEventViewerForIP.ps1 = SearchEventViewerForIP.ps1
 	EndProjectSection
 EndProject
 Global
