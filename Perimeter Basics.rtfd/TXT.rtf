@@ -1,0 +1,969 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2706
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 TimesNewRomanPSMT;\f1\froman\fcharset0 TimesNewRomanPS-BoldMT;\f2\ftech\fcharset77 Symbol;
+\f3\fswiss\fcharset0 Helvetica;\f4\fswiss\fcharset0 Helvetica-Bold;\f5\fmodern\fcharset0 CourierNewPSMT;
+\f6\ftech\fcharset0 Wingdings-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red11\green76\blue180;\red0\green0\blue0;
+\red255\green255\blue11;\red0\green0\blue255;\red37\green96\blue166;\red24\green40\blue80;\red251\green0\blue7;
+}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c1961\c38824\c75686;\cssrgb\c0\c0\c0\c84706;
+\cssrgb\c100000\c100000\c0;\cssrgb\c0\c0\c100000;\cssrgb\c18039\c45882\c70980;\cssrgb\c12157\c21569\c38824;\cssrgb\c100000\c0\c0;
+}
+\margl1440\margr1440\vieww20480\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+
+\f0\fs32 \cf2 \expnd0\expndtw0\kerning0
+1.
+\fs18\fsmilli9333 \'a0\'a0\'a0\'a0 
+\fs32 \cf3 \ul \ulc3 Perimeter Basics\cf2 \ulnone \
+2.
+\fs18\fsmilli9333 \'a0\'a0\'a0\'a0 
+\fs32 \cf3 \ul DMZ\cf2 \ulnone \
+3.
+\fs18\fsmilli9333 \'a0\'a0\'a0\'a0 
+\fs32 \cf3 \ul Domain Spoofing\cf2 \ulnone \
+4.
+\fs18\fsmilli9333 \'a0\'a0\'a0\'a0 
+\fs32 \cf3 \ul Endpoints\cf2 \ulnone \
+5.
+\fs18\fsmilli9333 \'a0\'a0\'a0\'a0 
+\fs32 \cf3 \ul Firewalls\cf2 \ulnone \
+6.
+\fs18\fsmilli9333 \'a0\'a0\'a0\'a0 
+\fs32 \cf3 \ul Intrusion Detection System\cf2 \ulnone \
+7.
+\fs18\fsmilli9333 \'a0\'a0\'a0\'a0 
+\fs32 \cf3 \ul Intrusion Prevention\cf2 \ulnone \
+8.
+\fs18\fsmilli9333 \'a0\'a0\'a0\'a0 
+\fs32 \cf3 \ul VPN\cf2 \ulnone \
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+\cf4 \ul \ulc4 9.
+\fs18\fsmilli9333 \'a0\'a0\'a0\'a0 
+\fs32 \cf3 \ulc3 SSL VPN\cf2 \ulnone \
+\cf4 \ul \ulc4 10.
+\fs18\fsmilli9333 \'a0 
+\fs32 \cf3 \ulc3 HoneyPot User\cf2 \ulnone \
+\cf4 \ul \ulc4 11.
+\fs18\fsmilli9333 \'a0 
+\fs32 \cf3 \ulc3 PowerShell Transcript\cf2 \ulnone \
+\cf4 \ul \ulc4 12.
+\fs18\fsmilli9333 \'a0 
+\fs32 \cf3 \ulc3 Parallel Pipelining\cf2 \ulnone \
+\cf4 \ul \ulc4 13.
+\fs18\fsmilli9333 \'a0 
+\fs32 \cf3 \ulc3 Create Macrop\cf2 \ulnone \
+14.
+\fs18\fsmilli9333 \'a0 
+\fs32 \cf3 \ul AD Hardening\cf2 \ulnone \
+\pard\pardeftab720\partightenfactor0
+\cf2 \'a0\
+\'a0\
+\'a0\
+\'a0\
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+\cf2 \cb5 1.
+\fs18\fsmilli9333 \'a0\'a0\'a0\'a0 
+\fs32 Perimeter Basics\cb1 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f1\b \cf2 Securing Your Network Perimeter
+\f0\b0 \'a0 - Cybercriminals are always on the lookout for weaknesses in one\'92s network. Since companies today allow data access to several employees, partners, and consumers for efficiency, it exposes the network to multiple threats.\'a0\
+
+\f1\b What is a Network Perimeter?
+\f0\b0 \'a0 - A network perimeter is a boundary between the internal network and the Internet. It is the edge of what a company has control over. In perspective, it\'92s like a virtual wall that allows and prevents specific aspects based on rules and policies.\'a0\'a0\
+
+\f1\b Network Perimeter includes the following:\'a0\'a0
+\f0\b0 \
+
+\f1\b Firewalls: 
+\f0\b0 A firewall can either be hardware, software, or both. It serves as the first line of defense in network security wherein it monitors inbound and outbound network traffic and decides whether to block or allow it based on security policies.\'a0\'a0\
+Some types of firewalls include:\'a0\'a0\
+\pard\pardeftab720\li1440\fi-480\sa320\partightenfactor0
+
+\f2\fs26\fsmilli13333 \cf2 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\fs32 Proxy firewall\'a0\
+
+\f2\fs26\fsmilli13333 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\fs32 Stateful Inspection Firewall\'a0\
+
+\f2\fs26\fsmilli13333 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\fs32 Unified Threat Management Firewall\'a0\
+
+\f2\fs26\fsmilli13333 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\fs32 Virtual Firewall\'a0\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f1\b \cf2 Importance of Network Perimeter
+\f0\b0 \'a0 - In today\'92s business environment, we rely heavily on our devices to stay connected and our dependence on network security has increased due to the growing number of cyberattacks. However, as businesses expand, so are the location and the addition of devices and many of which are being used outside the network perimeter, then, presents a problem when it comes to security.\'a0\'a0\
+Since most people can now work anywhere, data can be shared and collected on a massive scale and the security team\'92s capacity to monitor all these data could be out of control. The concept of network perimeter will allow your organization to think strategically about how you can protect critical internal data from external threats.\'a0\'a0\
+\'a0\
+\'a0\
+\'a0\
+So, how can you secure your network perimeter?\'a0\'a0\
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf2 {{\NeXTGraphic unknown.png \width5130 \height2950 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\partightenfactor0
+
+\f0 \cf2 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f1\b \cf2 Creating a Secure Network Perimeter
+\f0\b0 \'a0 - The security of your network perimeter is an important defense to safeguard important data. Understanding that having multiple layers of security is important since threats and other potential risks can evolve.\'a0\'a0\
+Here are some best practices:\'a0\'a0\
+
+\f1\b Strengthen device configurations and update software
+\f0\b0 \'a0\
+The first line of defense is to have a solid foundation or wall to {\field{\*\fldinst{HYPERLINK "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Funiserveit.com.mcas.ms%2Fblog%2Freasons-why-software-updates-are-important-for-your-business%3FMcasTsid%3D15600&McasCSRF=3865d4ed019f6d5cb6744af2fb635a38ee6d0d4c2e47fcdcc329d1f0f782f9eb"}}{\fldrslt \cf6 \ul \ulc6 prevent attackers from penetrating the system}}. This typically includes network security devices such as firewalls, routers that serve as the guard to your system.\'a0\'a0\
+Each software, device, or operating system you are using to protect your network should be kept up to date and properly configured. One frequent problem among organizations is being complacent with all the layers of security they have but one misstep can already give a cybercriminal entry to your system.\'a0\'a0\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf7 What is a Network Perimeter?\'a0
+\f0  - 
+\f3 \cf2 A network perimeter is the secured boundary between the private and locally managed side of a network, often a company\'92s intranet, and the public facing side of a network, often the Internet.\'a0\'a0
+\f0 \
+
+\f3 A network perimeter includes:\'a0\'a0
+\f0 \
+\pard\pardeftab720\li1440\fi-480\sa320\partightenfactor0
+
+\f2\fs26\fsmilli13333 \cf2 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f4\b\fs32 Border Routers:
+\f3\b0  Routers serve as the traffic signs of networks. They direct traffic into, out of, and throughout networks. The border router is the final router under the control of an organization before traffic appears on an untrusted network, such as the Internet.\'a0
+\f0 \
+
+\f2\fs26\fsmilli13333 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f4\b\fs32 Firewalls:
+\f3\b0  A firewall is a device that has a set of rules specifying what traffic it will allow or deny to pass through it. A firewall typically picks up where the border router leaves off and makes a much more thorough pass at filtering traffic.\'a0
+\f0 \
+
+\f2\fs26\fsmilli13333 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f3\fs32 \'a0
+\f4\b Intrusion Detection System (IDS):
+\f3\b0  This functions as an alarm system for your network that is used to detect and alert on suspicious activity. This system can be built from a single device or a collection of sensors placed at strategic points in a network.\'a0
+\f0 \
+
+\f2\fs26\fsmilli13333 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f3\fs32 \'a0
+\f4\b Intrusion Prevention System (IPS):
+\f3\b0  Compared to a traditional IDS which simply notifies administrators of possible threats, an IPS can attempt to automatically defend the target without the administrator's direct intervention.\'a0
+\f0 \
+
+\f2\fs26\fsmilli13333 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f3\fs32 \'a0
+\f4\b De-Militarized Zones / Screened Subnets:
+\f3\b0  DMZ and screened subnet refer to small networks containing public services connected directly to and offered protection by the firewall or other filtering device.\'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf8 Network Perimeter Requirements\'a0
+\f0 \cf2 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf2 For most modern businesses, there is no single defensible boundary between a company\'92s internal assets and the outside world.\'a0\'a0
+\f0 \
+\pard\pardeftab720\li1440\fi-480\sa320\partightenfactor0
+
+\f2\fs26\fsmilli13333 \cf2 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f3\fs32 Internal users are not simply connecting from inside an organization\'92s building, network, or inner circle. They are connecting from external networks and using mobile devices to access internal resources.\'a0
+\f0 \
+
+\f2\fs26\fsmilli13333 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f3\fs32 Data and applications are no longer housed on servers that businesses physically own, maintain, and protect. Data warehouses, cloud computing, and software as a service present immediate access and security challenges for both internal and external users.\'a0
+\f0 \
+
+\f2\fs26\fsmilli13333 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f3\fs32 Web services have opened a wide door to interactions outside of normal trust boundaries. To serve multiple clients, or simply to communicate with other services, both internal and external, insecure interactions on external platforms occur all the time.\'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf2 Also, individually protecting each software application, service, or asset can be quite challenging. While the concept of a \'93network perimeter\'94 has meaning for certain network configurations, in today\'92s environment it should be treated abstractly, rather than as a specific setup.\'a0\'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f4\b \cf8 Network Perimeter Guidelines\'a0
+\f1  -
+\f0\b0  
+\f3 \cf2 With this in mind, there are a few guidelines that can help to deliver a secure and modular network environment:\'a0\'a0
+\f0 \
+\pard\pardeftab720\li1440\fi-480\sa320\partightenfactor0
+
+\f2\fs26\fsmilli13333 \cf2 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f3\fs32 Strong authentication to allow controlled access to information assets. Two factor authentication acts as an extra layer of security for logins, ensuring that attempted intrusions are halted before any damage is done.\'a0
+\f0 \
+
+\f2\fs26\fsmilli13333 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f3\fs32 \'a0Hardening of mobile and IoT devices that connect to the network. Access control policies define high-level requirements that determine who may access information, and under what circumstances that information can be accessed.\'a0
+\f0 \
+
+\f2\fs26\fsmilli13333 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f3\fs32 \'a0Embedded security services inside devices and applications. Embedded security solutions can help protect devices ranging from atm\'92s to automated manufacturing systems. Features including application whitelisting, antivirus protection, and encryption can be embedded to help protect otherwise exposed IoT devices.\'a0
+\f0 \
+
+\f2\fs26\fsmilli13333 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f3\fs32 \'a0Collecting security intelligence directly from applications and their hosts. Maintaining an open communication line with cloud service providers like AWS can greatly increase security protections. Application and service managers understand how to integrate shared security with their systems better than anyone else.\'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf2 \'a0
+\f0 \
+
+\f3 \cf7 Why a Network Perimeter is Important\'a0
+\f0  - 
+\f3 \cf2 The increasing reliance on an interconnected ecosystem of online devices in today's business environment has greatly increased our reliance on network security in order to prevent cyber attacks. Data is collected, collated, and interpreted on a massive scale, and it\'92s security is dependent on the protections that surrounds it. The concept and evolution of a network perimeter allows organizations to think effectively on how to safeguard their internal information from untrusted or malicious actors.\'a0\'a0
+\f0 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \'a0\
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+\cf2 \cb5 2.
+\fs18\fsmilli9333 \'a0\'a0\'a0\'a0 
+\fs32 DMZ\cb1 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f1\b \cf2 De-Militarized Zones: 
+\f0\b0 The purpose of DMZ is to enable access to resources from the untrusted network while keeping the system or host on an internal private network secure. Resources that are commonly placed within the DMZ are Mail servers, {\field{\*\fldinst{HYPERLINK "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fsource.raysync.io.mcas.ms%2Fnews%2Fwhat-is-ftp-server-and-how-does-it-work%3FMcasTsid%3D15600&McasCSRF=3865d4ed019f6d5cb6744af2fb635a38ee6d0d4c2e47fcdcc329d1f0f782f9eb"}}{\fldrslt \cf6 \ul \ulc6 FTP servers}}, Web servers, and VoIP servers.\'a0\'a0\
+
+\f1\b Segmenting the DMZ
+\f0\b0 \'a0 - Firewall rules should be tightened to only allow traffic to necessary services within the DMZ, so you need to configure the DMZ managed by the security system. One rule is to allow source IP addresses to specific servers and add proxies within the network from which admins are allowed access. Also, consider segmenting systems within the DMZ to limit the effect if the system is breached.\'a0\'a0\
+The first step to protect your data is to secure your network perimeter effectively. A multi-level defense system is strongly recommended to reduce cyberattacks on your internal network. If you want to check the efficiency and improve your network perimeter\'92s security\'a0\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf7 What is a DMZ Network?\'a0
+\f0  - 
+\f3 \cf2 In computer security, a DMZ Network (sometimes referred to as a \'93demilitarized zone\'94) functions as a subnetwork containing an organization's exposed, outward-facing services. It acts as the exposed point to an untrusted networks, commonly the Internet.\'a0\'a0
+\f0 \
+
+\f3 The goal of a DMZ is to add an extra layer of security to an organization's local area network. A protected and monitored network node that faces outside the internal network can access what is exposed in the DMZ, while the rest of the organization's network is safe behind a firewall.\'a0\'a0
+\f0 \
+
+\f3 When implemented properly, a DMZ Network gives organizations extra protection in detecting and mitigating security breaches before they reach the internal network, where valuable assets are stored.\'a0\'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf8 Purpose of a DMZ\'a0
+\f0  - 
+\f3 \cf2 The DMZ Network exists to protect the hosts most vulnerable to attack. These hosts usually involve services that extend to users outside of the local area network, the most common examples being email, web servers, and DNS servers. Because of the increased potential for attack, they are placed into the monitored subnetwork to help protect the rest of the network if they become compromised.\'a0\'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf2 Hosts in the DMZ have tightly controlled access permissions to other services within the internal network, because the data passed through the DMZ is not as secure. On top of that, communications between hosts in the DMZ and the external network are also restricted to help increase the protected border zone. This allows hosts in the protected network to interact with the internal and external network, while the firewall separates and manages all traffic shared between the DMZ and the internal network. Typically, an additional firewall will be responsible for protecting the DMZ from exposure to everything on the external network.\'a0\'a0
+\f0 \
+
+\f3 \'a0
+\f0 \
+
+\f3 All services accessible to users on communicating from an external network can and should be placed in the DMZ, if one is used. The most common services are:\'a0
+\f0 \
+\pard\pardeftab720\li1440\fi-480\sa320\partightenfactor0
+
+\f2\fs26\fsmilli13333 \cf2 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f4\b\fs32 Web servers:
+\f3\b0  Web servers responsible for maintaining communication with an internal database server may need to be placed into a DMZ. This helps ensure the safety of the internal database, which is often storing sensitive information. The web servers can then interact with internal database server through an application firewall or directly, while still falling under the umbrella of the DMZ protections.\'a0
+\f0 \
+
+\f2\fs26\fsmilli13333 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f4\b\fs32 Mail servers:
+\f3\b0  individual email messages, as well as the user database built to store login credentials and personal messages, are usually stored on servers without direct access to the internet. Therefore, an email server will be built or placed inside the DMZ in order to interact with and access the email database without directly exposing it to potentially harmful traffic.\'a0
+\f0 \
+
+\f2\fs26\fsmilli13333 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f4\b\fs32 FTP servers:
+\f3\b0  These can host critical content on an organization's site, and allow direct interaction with files. Therefore, an FTP server should always be partially isolated from critical internal systems.\'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf2 A DMZ configuration provides additional security from external attacks, but it typically has no bearing on internal attacks such as sniffing communication via a packet analyzer or spoofing via email or other means.\'a0\'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf8 DMZ Designs\'a0
+\f0  - 
+\f3 \cf2 There are numerous ways to construct a network with a DMZ. The two major methods are a single firewall (sometimes called a three-legged model), or dual firewalls. Each of these system can be expanded to create complex architectures built to satisfy network requirements:\'a0\'a0
+\f0 \
+\pard\pardeftab720\li1440\fi-480\sa320\partightenfactor0
+
+\f2\fs26\fsmilli13333 \cf2 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f4\b\fs32 Single firewall:
+\f3\b0  A modest approach to network architecture involves using a single firewall, with a minimum of 3 network interfaces. The DMZ will be placed Inside of this firewall. The tier of operations is as follows: the external network device makes the connection from the ISP, the internal network is connected by the second device, and connections within the DMZ is handled by the third network device.\'a0
+\f0 \
+
+\f2\fs26\fsmilli13333 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f4\b\fs32 Dual firewall:
+\f3\b0  The more secure approach is to use two firewalls to create a DMZ. The first firewall (referred to as the \'93frontend\'94 firewall) is configured to only allow traffic destined for the DMZ. The second firewall (referred to as the \'93backend\'94 firewall) is only responsible for the traffic that travels from the DMZ to the internal network. An effective way of further increasing protection is to use firewalls built by separate vendors, because they are less likely to have the same security vulnerabilities. While more effective, this scheme can be more costly to implement across a large network.\'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf7 Why DMZ Networks are Important\'a0
+\f0  - 
+\f3 \cf2 On many home networks, internet enabled devices are built around a local area network which accesses the internet from a broadband router. However, the router serves as both a connection point and a firewall, automating traffic filtering to ensure only safe messages enter the local area network. So, on a home network, a DMZ can built by adding a dedicated firewall, between the local area network and the router. While more expensive, this structure can help to protect internal devices from sophisticated attacks better protects the inside devices from possible attacks by the outside.\'a0\'a0
+\f0 \
+
+\f3 DMZ\'92s are an essential part of network security for both individual users and large organizations. They provides an extra layer of security to the computer network by restricting remote access to internal servers and information, which can be very damaging if breached.\'a0\'a0
+\f0 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \'a0\
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+\cf2 \cb5 3.
+\fs18\fsmilli9333 \'a0\'a0\'a0\'a0 
+\fs32 Domain Spoofing\cb1 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf7 What is Domain Spoofing?\'a0
+\f0  - 
+\f3 \cf2 Domain spoofing, a common form of phishing, occurs when an attacker appears to use a company\'92s domain to impersonate a company or one of its employees.\'a0\'a0
+\f0 \
+
+\f3 This can be done by sending emails with false domain names which appear legitimate, or by setting up websites with slightly altered characters that read as correct. Commonly, a spoof website or email will use logos, or any other kind of accurate visual design to effectively imitate the styling and branding of a legitimate enterprise or business. Users will commonly be prompted to enter financial details or other sensitive data, trusting that they are being sent to the right place.\'a0\'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f4\b \cf2 Domain Spoofing Classifications\'a0
+\f0\b0 \
+
+\f4\b Email Spoofing:
+\f3\b0  forging of an email header so that the message seems to originate from someone or somewhere different from the actual source. Email spoofing is a scheme used in both phishing and spam campaigns because users don't want to open an email if they don\'92t trust the legitimacy of the source. The purpose of email spoofing is to trick recipients into opening, or even corresponding with a solicitation.\'a0\'a0
+\f0 \
+
+\f4\b Website spoofing:
+\f3\b0  Website spoofing is the act of building a fake website with the goal of misleading users, gaining their trust, and assuming the identity of a legitimate group or organization. The spoof website will frequently adopt the design of the target website and sometimes mimic the URL with alternate characters.\'a0\'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf2 A more sophisticated attack can involve the perpetrator building a \'91shadow\'92 version of the World Wide Web by routing all of the user\'92s web traffic through the attackers console. This type of attack captures all of the victims sensitive information. Another method used by domain spoofing attackers is to use a cloaked URL. By using domain forwarding, or inserting control characters, the URL can appear to be genuine while concealing the address of the actual website.\'a0\'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf8 Email Spoofing Solutions\'a0
+\f0  - 
+\f3 \cf2 Email spoofing is possible because the Simple Mail Transfer Protocol (SMTP) does not provide a mechanism for address authentication. Although email address authentication protocols and mechanisms have been specified to battle email spoofing, adoption of those mechanisms has been slow.\'a0\'a0
+\f0 \
+\pard\pardeftab720\li1440\fi-480\sa320\partightenfactor0
+
+\f2\fs26\fsmilli13333 \cf2 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f4\b\fs32 Sender Policy Framework (SPF):
+\f3\b0  an email validation system, SPF allows domain managers to authorize individual hosts to use a domain in email. This list of approved domain names in protected, and can be used to verify authenticity.\'a0
+\f0 \
+
+\f2\fs26\fsmilli13333 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f4\b\fs32 Domain-based Message Authentication, Reporting and Conformance (DMARC):
+\f3\b0  is an email authentication protocol based on reporting and enforcement components. Built on two components, reporting and enforcement. Through reporting, DMARC can automate authenticity verification, and alert administrators to false email domains immediately. When false domains are used DMARC will stop the email from entering the inbox.\'a0
+\f0 \
+
+\f2\fs26\fsmilli13333 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f4\b\fs32 DomainKeys Identified Mail:
+\f3\b0  (DKIM) which provides a way to validate a domain name identity associated with a message. When a message is built, a digital signature is added to the email to ensure authenticity. DKIM does not offer filtering capabilities, but can be used to guarantee legitimacy of the message.\'a0
+\f0 \
+
+\f2\fs26\fsmilli13333 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f4\b\fs32 Sender ID (SID):
+\f3\b0  a protocol based largely on SPF and promoted by Microsoft, SID is built into exchange servers, by reading the SMTP header. The service the queries the DNS records to verify the sender's address.\'a0\'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf7 Why Domain Spoofing is Important\'a0
+\f0  - 
+\f3 \cf2 Experts recommend that users only access financial sites and other sensitive sites directly through a main page or other verified avenue in order to avoid being cheated by a spoof website. According to the FTC, over 96% of companies operating today suffer from domain spoofing attacks in one form or another. Therefore, having the right solutions in place to protect against the possibility of an attack is a necessity for any person or business.\'a0\'a0
+\f0 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \'a0\
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+\cf2 \cb5 4.
+\fs18\fsmilli9333 \'a0\'a0\'a0\'a0 
+\fs32 Endpoints\cb1 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf7 What is an Endpoint Device?\'a0
+\f0  - 
+\f3 \cf2 An endpoint device is a LAN- or WAN-connected hardware device that communicates across a network. Broadly speaking, the term can refer to any network connected device: desktop computers, laptops, smartphones, tablets, printers, or other specialized hardware like POS terminals or retail kiosks, that act as a user endpoint in a distributed network. The term is more specifically applies to Internet-connected hardware found on a TCP/IP network.\'a0\'a0
+\f0 \
+
+\f3 One of the biggest issues with endpoint devices involves comprehensive security for a network or enterprise system. Security managers must determine whether various endpoint devices could be security gaps for a network \'96 that is, whether unauthorized users can access an endpoint device and use it to pull off important or sensitive data.\'a0\'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf8 Endpoint Device Security Challenges\'a0
+\f0 - 
+\f3 \cf2 A policy-based approach to network security is paramount when safeguarding a network. The policy should require endpoint devices to meet specific criteria before being granted access to network resources. Security architecture is designed to handle endpoint devices in order to safeguard the data assets accessed through these systems.\'a0\'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf2 Companies that allow employees to bring their own device, as in laptops or smartphones, frequently face endpoint device security issues. Without a well-considered bring your own device (BYOD) policy, employee-owned devices may compromise the security of company information, or of the network.\'a0\'a0
+\f0 \
+
+\f3 Organizations believe that {\field{\*\fldinst{HYPERLINK "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fwww.code42.com.mcas.ms%2Fnews-releases%2F2016-03-15-one-in-four-it-professionals-say-companies-are-not-doing-enough-to-protect-data%2F%3FMcasTsid%3D15600&McasCSRF=3865d4ed019f6d5cb6744af2fb635a38ee6d0d4c2e47fcdcc329d1f0f782f9eb"}}{\fldrslt \cf6 \ul \ulc6 close to 45%}} of corporate data is held on endpoint devices. These laptops, tablets and smartphones pose a huge risk to data security.\'a0\'a0
+\f0 \
+
+\f3 The industry-wide growth of endpoint device exposure means that it\'92s easier than ever for data to be put at risk. Each time an employee connects over public WiFi, downloads a suspicious app, or is targeted by a phishing scam, the risk is amplified.\'a0\'a0
+\f0 \
+
+\f3 This is especially important because endpoint devices not only expose their data to possible seizure, they also serve as a potential conduit for a network wide breach of security.\'a0\'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf8 Endpoint Device Weaknesses\'a0
+\f0 - 
+\f3 \cf2 Security policies, especially as they relate to BYOD protections, are an essential part of protecting endpoint devices from being exposed to attack. But the largest contributor to vulnerability is the quality of training and awareness given to employees. Bad habits can have a serious effect on the integrity of a secure network:\'a0\'a0
+\f0 \
+\pard\pardeftab720\li1440\fi-480\sa320\partightenfactor0
+
+\f2\fs26\fsmilli13333 \cf2 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f4\b\fs32 Lost or improperly decommissioned devices:
+\f3\b0  Employees who lose devices that are connected to the company network may expose that network to attacks.\'a0
+\f0 \
+
+\f2\fs26\fsmilli13333 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f4\b\fs32 Poor adoption of security updates:
+\f3\b0  Out-of-date operating systems and applications can lead to any number of vulnerabilities within a device that has been given access to sensitive company information.\'a0
+\f0 \
+
+\f2\fs26\fsmilli13333 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f4\b\fs32 Employees switching encryption off/on:
+\f3\b0  people are more likely to adjust the security controls on devices they own, and will rework settings to suit their needs. This can lead to unwanted access points.\'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf2 With a proactive, always on\'92 technology, IT can avoid these types of issues, while maintaining compliance and mitigating risk.\'a0\'a0\'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf8 Managing Endpoint Device Security\'a0
+\f0  - 
+\f3 \cf2 Traditionally, endpoint security systems are built on the framework of a client-server model. The security program is managed by a central server that controls the client program installed on all network drives. More recently, with the increasing adoption of software as a service platforms (SaaS), the program and host server are both managed remotely by the SaaS provider. This business model gives organizations a chance to lower costs while ensuring constant updates to security parameters.\'a0\'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf7 Why Endpoint Devices are Important\'a0
+\f0 - 
+\f3 \cf2 Endpoint security management is a necessary part of ensuring a secure network. Proper controls can help to identify and manage user access over a personal or corporate network, giving security services the time they need to locate and deter possible threats.\'a0\'a0
+\f0 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \'a0\
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+\cf2 \cb5 5.
+\fs18\fsmilli9333 \'a0\'a0\'a0\'a0 
+\fs32 Firewalls \cb1 \
+\pard\pardeftab720\li960\partightenfactor0
+\cf2 \'a0\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf2 Firewalls: 
+\f0\b0 A firewall can either be hardware, software, or both. It serves as the first line of defense in network security wherein it monitors inbound and outbound network traffic and decides whether to block or allow it based on security policies.\'a0\'a0\
+\pard\pardeftab720\sa320\partightenfactor0
+\cf2 Some types of firewalls include:\'a0\'a0\
+\pard\pardeftab720\li1440\fi-480\sa320\partightenfactor0
+
+\f2\fs26\fsmilli13333 \cf2 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\fs32 Proxy firewall\'a0\
+
+\f2\fs26\fsmilli13333 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\fs32 Stateful Inspection Firewall\'a0\
+
+\f2\fs26\fsmilli13333 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\fs32 Unified Threat Management Firewall\'a0\
+
+\f2\fs26\fsmilli13333 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\fs32 Virtual Firewall\'a0\
+\pard\pardeftab720\partightenfactor0
+\cf2 \'a0\
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+\cf2 \cb5 6.
+\fs18\fsmilli9333 \'a0\'a0\'a0\'a0 
+\fs32 Intrusion Detection System \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \'a0\
+I
+\f1\b ntrusion Detection System: 
+\f0\b0 The IDS detects and notifies your systems for any malicious events or policy violations. An IDS can be host-based or network-based depending on its environment.\'a0\'a0\
+\pard\pardeftab720\li1440\fi-480\sa320\partightenfactor0
+
+\f2\fs26\fsmilli13333 \cf2 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\b\fs32 Host-Based IDS:
+\f0\b0  Designed for specific endpoint and protect it against internal and external threats. A host-based IDS is limited only to its host machine, but it allows deep visibility to monitor traffic to and from the machine.\'a0\'a0\
+
+\f2\fs26\fsmilli13333 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\b\fs32 Network-Based IDS: 
+\f0\b0 Designed for monitoring an entire network. It provides wider visibility into the traffic flowing through the network and has the ability to uncover extensive threats. However, this system doesn\'92t have deep visibility into the endpoints they protect.\'a0\'a0\
+\pard\pardeftab720\partightenfactor0
+\cf2 \'a0\
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+\cf2 \cb5 7.
+\fs18\fsmilli9333 \'a0\'a0\'a0\'a0 
+\fs32 Intrusion Prevention \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf2 \'a0
+\f0\b0 \
+
+\f1\b Intrusion Prevention System: 
+\f0\b0 This system is designed to monitor intrusions and prevent threats from developing. The system monitors your network continuously and scans for possible risk to gather more information and administer the proper preventative actions. This system can be used to identify violations against rules and policies.\'a0\'a0\
+\'a0\
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+\cf2 \cb5 8.
+\fs18\fsmilli9333 \'a0\'a0\'a0\'a0 
+\fs32 VPN - 
+\f1\b Virtual Private Network
+\f0\b0 \'a0\cb1 \
+\pard\pardeftab720\sa320\partightenfactor0
+\cf2 VPN\'92s employing data encryption can enable users outside of the network to access the internal network. Passwords are essential but most breaches are a result of weak password or password theft, thus, utilizing {\field{\*\fldinst{HYPERLINK "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Funiserveit.com.mcas.ms%2Fblog%2Fauthenticator-app-microsoft-or-google%3FMcasTsid%3D15600&McasCSRF=3865d4ed019f6d5cb6744af2fb635a38ee6d0d4c2e47fcdcc329d1f0f782f9eb"}}{\fldrslt \cf6 \ul \ulc6 two-factor authentication}} to ensure identification and integrity of the user trying to connect to the network is necessary.\'a0\'a0\
+\pard\pardeftab720\partightenfactor0
+\cf2 \'a0\
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+\cf2 \cb5 9.
+\fs18\fsmilli9333 \'a0\'a0\'a0\'a0 
+\fs32 SSL_VPN\cb1 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf7 What is an SSL VPN? - \cf2 A Secure Socket Layer Virtual Private Network (SSL VPN) lets remote users access Web applications, client-server apps, and internal network utilities and directories without the need for specialized client software. SSL VPN\'92s provide safe communication for all types of device traffic across public networks and private networks.\'a0\'a0
+\f0 \
+
+\f3 All traffic between a Web browser and SSL VPN device is encrypted with the SSL protocol, or its successor protocol (TLS). SSL VPN\'92s solve the long standing frustrations found within both the traditional Wide Area Network (WAN) as well as IPSEC based VPNs. This ease of use quality allows for greater work efficiency, lowering costs and increasing employee and business practices. When properly used SSL VPN\'92s do not impact security network at all.\'a0\'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf8 SSL VPN Types\'a0
+\f0 \cf2 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf2 There are two major types of SSL VPNs:\'a0
+\f0 \
+\pard\pardeftab720\li1440\fi-480\sa320\partightenfactor0
+
+\f2\fs26\fsmilli13333 \cf2 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f4\b\fs32 SSL Portal VPN
+\f3\b0  - This type of SSL VPN allows for a single SSL connection to a website, through which a user can access a variety of private network services. The SSL VPN type is called a \'93portal\'94 because it is essentially a single web page that leads to many other resources. Users can generally access this gateway using any modern browser, only requiring the identification and password provided by gateway service.\'a0
+\f0 \
+
+\f2\fs26\fsmilli13333 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f4\b\fs32 SSL Tunnel VPN
+\f3\b0  - This alternative type of SSL VPN allows a Web browser to securely access multiple network services that may not just be web-based, through a tunnel that is running under SSL. SSL tunnel VPNs necessitate a browser which can interact with and display active content increasing the versatility over just a simple SSL Portal VPN. Active content can mean anything from JavaScript to Flash based technology.\'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf8 IPSEC VPN versus SSL VPN Technology\'a0
+\f0  - 
+\f3 \cf2 Traditional VPN\'92s rely on IPSec (Internet Protocol Security) to tunnel between the two endpoints. IPSec works on the Network Layer of the OSI Model and must be managed deep within the actual OS network code, rather than within an software application. When connected through an IPSec VPN, the client computer is for all intents and purposes mimicking the qualities of terminal within the corporate network, allow to access anything an internal computer could. Most IPSec VPN solutions require either third-party hardware or software to be installed to interface with the network.\'a0\'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf2 The main benefit of an IPSEC based VPN is the extra layer of security inherent to a system which requires specific and compatible hardware to run properly. This removes the ease of access that so often allows cyber criminals to attack exposed networks.\'a0\'a0
+\f0 \
+
+\f3 On the flipside, one of the cons is that it can be pretty heavy burden on a business to pay for and maintain the licenses for both the initial software installation, not to mention the tech support needed to maintain and update said software. This issue can be exacerbated even further if onsite installation isn\'92t always possible.\'a0\'a0
+\f0 \
+
+\f3 SSL is a common protocol and supported by most modern web browsers without any additional installations needed. At this point, an overwhelming majority of internet accessible computers already have the \'93client software\'94 necessary to connect through an SSL VPN.\'a0\'a0
+\f0 \
+
+\f3 Another major benefit of SSL based VPNs is that they allow tunneling to specific applications, when network wide access is unnecessary. This is a great security and data safety feature. Not only that, but within the SSL framework, it is much easier to assign different administrative rights to users depending on the their seniority and access needs.\'a0\'a0
+\f0 \
+
+\f3 One of the benefits of SSL VPN can also be a hindrance when considering security. The fact that a VPN is simply accessed through a web browser means that only web based applications are useable within a the VPN without intensive technical customization, customization which defeats some of the benefits allowed by SSL VPNs.\'a0\'a0
+\f0 \
+
+\f3 Another issue with SSL VPN\'92s relates to the inherent security of its terminal. Web browsers are susceptible to malware downloads, so a VPN with an open SSL terminal might have a chance of becoming infected. Not only that but the digital gateway of a webpage gives hackers a more direct line of sight for where to attack if they want to access sensitive information of any kind.\'a0
+\f0 \
+
+\f3 \cf7 Why an SSL VPN is Important\'a0
+\f0 \cf2 \
+
+\f3 As VPNs in general become a much larger part of corporate and educational environments, simplifying and expanding the ease of use will become paramount. SSL VPN\'92s are useable by people with little to no computer literacy, are accessible from within any modern personal computer or device, and can be configured to be as secure as the IPSEC VPN protocol that preceded it. Businesses that can exist globally have access to a wider network of employees, and can expand securely without the overhead and knowledge required by more antiquated VPN technologies.\'a0\'a0
+\f0 \
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+\cf2 \cb5 10.
+\fs18\fsmilli9333 \'a0 
+\fs32 HoneyPot User\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \'a0\
+\'a0
+\f3 4662 \'96 an operation was performed on an object. Active Directory logs this event when a user accesses an AD OBject\'a0\'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf2 Can be uesd to create a honeypot user, using and event that does not come up often, but for specific auditing, this log will happen when a user is enumerated.\'a0\'a0
+\f0 \
+
+\f3 View the current audit settings\'a0
+\f0 \
+\pard\pardeftab720\li960\sa320\partightenfactor0
+
+\f3 \cf2 > auditpol /get /category:*\'a0
+\f0 \
+
+\f3 > auditpol /get /category:* /success:enable /failure:enable\'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf2 \'a0
+\f0 \
+
+\f3 Instructions\'a0\'a0
+\f0 \
+\pard\pardeftab720\li960\fi-480\sa320\partightenfactor0
+
+\f2 \cf2 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f3\fs32 DC >> server manager >> tools >> AD users and computers\'a0
+\f0 \
+
+\f2 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f3\fs32 'View' >> Check the Advanced Features option\'a0
+\f0 \
+
+\f2 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f3\fs32 Create users across the Organizational Units\'a0
+\f0 \
+
+\f2 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f3\fs32 Ex: User Name\'a0\'a0\'a0\'a0 'AAALDAPcheck'\'a0
+\f0 \
+
+\f2 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f3\fs32 Once the user is create right click on that user in their OU, select Properties\'a0
+\f0 \
+
+\f2 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f3\fs32 If Advanced Features was checked, the nuser now has a 'Security' tab in the properties.\'a0
+\f0 \
+\pard\pardeftab720\li1920\fi-480\sa320\partightenfactor0
+
+\f5 \cf2 o
+\f0\fs18\fsmilli9333 \'a0\'a0 
+\f3\fs32 Click on the Security tab >> Advanced\'a0
+\f0 \
+\pard\pardeftab720\li960\fi-480\sa320\partightenfactor0
+
+\f2 \cf2 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f3\fs32 Then click the 'Auditing' tab then the 'Add' button\'a0
+\f0 \
+\pard\pardeftab720\li1920\fi-480\sa320\partightenfactor0
+
+\f5 \cf2 o
+\f0\fs18\fsmilli9333 \'a0\'a0 
+\f3\fs32 Adjust the settings to:\'a0
+\f0 \
+\pard\pardeftab720\li2880\fi-480\sa320\partightenfactor0
+
+\f6 \cf2 \'a7
+\f0\fs18\fsmilli9333 \'a0 
+\f3\fs32 'Principal' = 'Everyone'\'a0
+\f0 \
+
+\f6 \'a7
+\f0\fs18\fsmilli9333 \'a0 
+\f3\fs32 'Applies to' = 'This object only'\'a0
+\f0 \
+
+\f6 \'a7
+\f0\fs18\fsmilli9333 \'a0 
+\f3\fs32 'Permissions' = 'Read all properties'\'a0
+\f0 \
+\pard\pardeftab720\li1920\fi-480\sa320\partightenfactor0
+
+\f5 \cf2 o
+\f0\fs18\fsmilli9333 \'a0\'a0 
+\f3\fs32 Apply >> OK\'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf2 \'a0
+\f0 \
+
+\f3 \'a0
+\f0 \
+
+\f3 Now with this user created and settings applied, now an EventID 4662 will be logged in the DC any time that one of these honeypot users is enumerated.\'a0
+\f0 \
+
+\f3 Examples of enumerating users:\'a0
+\f0 \
+
+\f3 External: Bloodhound, nmap\'a0
+\f0 \
+
+\f3 Or:\'a0
+\f0 \
+\pard\pardeftab720\fi960\sa320\partightenfactor0
+
+\f3 \cf2 \cb9 CMD> net user\cb1 \'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf2 That will list all users\'a0
+\f0 \
+
+\f3 Or get specific:\'a0
+\f0 \
+\pard\pardeftab720\fi960\sa320\partightenfactor0
+
+\f3 \cf2 \cb9 CMD> net user AAALDAPcheck\cb1 \'a0
+\f0 \
+
+\f3 \cb9 PowerShell> get-localuser\cb1 \'a0
+\f0 \
+
+\f3 s
+\f0 \
+\pard\pardeftab720\li960\fi-480\sa320\partightenfactor0
+\cf2 \cb5 11.
+\fs18\fsmilli9333 \'a0 
+\f3\fs32 PowerShell Transcript
+\f0 \cb1 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf2 OTS Over the Shoulder Transcription\'a0
+\f0 \
+\pard\pardeftab720\li1440\fi-480\sa320\partightenfactor0
+
+\f3 \cf2 1.
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0 
+\f3\fs32 PS:> gpedit.msc\'a0
+\f0 \
+
+\f3 2.
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0 
+\f3\fs32 Go to:\'a0
+\f0 \
+\pard\pardeftab720\li2880\fi-480\sa320\partightenfactor0
+
+\f3 \cf2 1.
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0 
+\f3\fs32 User Configuration >> Administrative Templates >> Windows PowerShell\'a0
+\f0 \
+\pard\pardeftab720\li1440\fi-480\sa320\partightenfactor0
+
+\f3 \cf2 3.
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0 
+\f3\fs32 Check "Enabled"\'a0
+\f0 \
+
+\f3 4.
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0 
+\f3\fs32 Set the results directory\'a0
+\f0 \
+
+\f3 5.
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0 
+\f3\fs32 Check "Include Invocation headers"\'a0
+\f0 \
+
+\f3 6.
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0 
+\f3\fs32 Click OK\'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf2 Now this will save transcripts for any action in PowerShell\'a0
+\f0 \
+
+\f3 You can also add "Start-Transcript \'96Path $transcriptPath" to the PowerShell profile.\'a0
+\f0 \
+
+\f3 So now, if you are running the FolderWatcher, and actions that happen and are stated in the PowerShell terminal will then also be saved to the transcript.\'a0\'a0
+\f0 \
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+\cf2 12.
+\fs18\fsmilli9333 \'a0 
+\fs32 Parallel Pipelining\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf2 Powershell 7 introduced the new parallel parameter for the ForEach-Object cmdlet, which allows you to run a script block in parallel for each element in a collection.\'a0
+\f0 \
+
+\f3 In prior versions of Powershell, if you pass an array of 10 objects such as event logs, it would run the code for eac hobject in sequential series. If we sent an array with numbers 1-10 and put the program to sleep for 1second each, it would be approximately 10 seconds.\'a0
+\f0 \
+
+\f3 But with PS7 we can run this in parallel even though it is an array. We can also set a throttle limit to make sure that the processes don't overstep their capabilities. So here, if we set the throttle limit to 10, then each member of the array will run in parallel and the entire process, even though each array member is still sleeping for 1second, it will fully complete in about 1 second as all 10 array members go in parallel.\'a0\'a0
+\f0 \
+
+\f3 If done correctly and accounting for a systems resources, this can greatly speed up a process especially when doing something like searching through different event logs.\'a0\'a0
+\f0 \
+\pard\pardeftab720\li960\fi-480\sa320\partightenfactor0
+\cf2 \cb5 13.
+\fs18\fsmilli9333 \'a0 
+\f3\fs32 Create Macro
+\f0 \cb1 \
+\pard\pardeftab720\sa320\partightenfactor0
+\cf2 \'a0
+\f3 View >> Macros >> View Macros (excel, word, etc)\'a0
+\f0 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f3 \cf2 Run or Edit\'a0 or Step into or Create after name with no spaces is entered\'a0
+\f0 \
+
+\f3 If they exist already, right click on sheet >>View Code\'a0
+\f0 \
+
+\f3 NOTE the examples below are not directly connected. We just pulled bits and pieces out or our Endpoint Training\'a0
+\f0 \
+
+\f3 We work on a 'Module'\'a0
+\f0 \
+\pard\pardeftab720\fi960\sa320\partightenfactor0
+
+\f3 \cf2 Call SetGlobalVariables\'a0
+\f0 \
+\pard\pardeftab720\li960\partightenfactor0
+
+\f3 \cf2 Dim ws As Worksheet\'a0
+\f0 \
+
+\f3 Set ws = Worksheets("SANSC15")\'a0
+\f0 \
+
+\f3 Dim row As Integer, col As Integer\'a0
+\f0 \
+
+\f3 Dim theButton As Object\'a0
+\f0 \
+
+\f3 With theButton.TopLeftCell\'a0
+\f0 \
+
+\f3 row = .row\'a0
+\f0 \
+
+\f3 col = .Column\'a0
+\f0 \
+
+\f3 End With\'a0
+\f0 \
+
+\f3 Dim userArray() As String\'a0
+\f0 \
+
+\f3 \'a0
+\f0 \
+
+\f3 Dim rng As Range\'a0
+\f0 \
+
+\f3 Set rng = ActiveSheet.Range("B3:B100")\'a0
+\f0 \
+
+\f3 \'a0
+\f0 \
+
+\f3 If (IsEmpty(ws.Range("A" & row).Value)) Then\'a0
+\f0 \
+
+\f3 UserArray = Split(users, ";"\'a0
+\f0 \
+
+\f3 End If\'a0
+\f0 \
+
+\f3 \'a0
+\f0 \
+
+\f3 \'a0
+\f0 \
+
+\f3 \'a0
+\f0 \
+
+\f3 \'a0
+\f0 \
+
+\f3 \'a0
+\f0 \
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+\cf2 \cb5 14.
+\fs18\fsmilli9333 \'a0 
+\f3\fs32 AD Hardening
+\f0 \cb1 \
+\pard\pardeftab720\li1440\fi-480\sa320\partightenfactor0
+
+\f2 \cf2 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f3\fs32 Block Int. Access for DCs\'a0
+\f0 \
+
+\f2 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f3\fs32 DC Audit (event logs)\'a0
+\f0 \
+
+\f2 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f3\fs32 GP Settings\'a0
+\f0 \
+
+\f2 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f3\fs32 Only Software and services that support AD\'a0
+\f0 \
+
+\f2 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f3\fs32 Patch and Config. Management\'a0
+\f0 \
+
+\f2 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f3\fs32 Perim. Firewall Restrictions \'96 Block outbound Cons\'a0
+\f0 \
+
+\f2 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f3\fs32 RDP Restrict\'a0
+\f0 \
+
+\f2 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f3\fs32 Open DNS Zone Transfer Hardening\'a0
+\f0 \
+
+\f2 \'e1
+\f0\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f3\fs32 SMB Usage\'a0
+\f0 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \'a0\
+\'a0\
+\pard\pardeftab720\li3840\partightenfactor0
+\cf2 \'a0\
+}
