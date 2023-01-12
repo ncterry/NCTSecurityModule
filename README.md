@@ -7,7 +7,7 @@ The NCTSecurityModule was built to accomplish everything, and run through the NC
 All functions associated with NCTSecurityModule were built to be run primarily from the '\NCTSecurityModule\NCTSecurityProgram'
 
 > .\RunNCTSecurityProgram.ps1
-Within the 'NCTSecurityModule' directory, the NCTSecurityProgram has an associated 'Shortcut' This can be run/pinned to anywhere on the machine; however, regardless of where it is run from, the default location that the NCTSecurityProgram will always used for data, reports, functions etc. is the WindowsPowershell location that the progrma copies itself to during execution:
+Within the 'NCTSecurityModule' directory, the NCTSecurityProgram has an associated 'Shortcut' This can be run/pinned to anywhere on the machine; however, regardless of where it is run from, the default location that the NCTSecurityProgram will always used for data, reports, functions etc. is the WindowsPowershell location that the progrma copies itself to during execution: 
 
 We created an temporary alias for this program. To make an alias permanent you need to add these commands to your profile as well:
 > notepad.exe $PROFILE
